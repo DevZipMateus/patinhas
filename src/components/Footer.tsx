@@ -1,5 +1,5 @@
 
-import { Facebook, Instagram, WhatsApp, MapPin, Mail, Phone } from 'lucide-react';
+import { Facebook, Instagram, MessageSquare, MapPin, Mail, Phone } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -28,7 +28,7 @@ const Footer = () => {
                 <Facebook className="h-5 w-5" />
               </a>
               <a href="https://wa.me/5551998198415" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center hover:bg-green-600 transition-colors">
-                <WhatsApp className="h-5 w-5" />
+                <MessageSquare className="h-5 w-5" />
               </a>
             </div>
           </div>

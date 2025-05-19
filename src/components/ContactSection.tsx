@@ -1,5 +1,5 @@
 
-import { Mail, Phone, MapPin, WhatsApp } from 'lucide-react';
+import { Mail, Phone, MapPin, MessageSquare } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 import { cn } from '@/lib/utils';
 
@@ -34,7 +34,7 @@ const ContactSection = () => {
                       rel="noopener noreferrer" 
                       className="flex items-center text-sm text-primary mt-1 hover:underline"
                     >
-                      <WhatsApp className="h-4 w-4 mr-1" /> WhatsApp
+                      <MessageSquare className="h-4 w-4 mr-1" /> WhatsApp
                     </a>
                   </div>
                 </div>
@@ -82,7 +82,7 @@ const ContactSection = () => {
         className="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 flex items-center justify-center"
         aria-label="Contato via WhatsApp"
       >
-        <WhatsApp className="h-6 w-6" />
+        <MessageSquare className="h-6 w-6" />
       </a>
     </section>
   );
