@@ -1,49 +1,49 @@
 
-import { Calculator, BarChart3, FileText, Users, PieChart, Building } from 'lucide-react';
+import { Scissors, Car, HomeIcon, ShoppingBag, Heart, Tag } from 'lucide-react';
 import ServiceCard from './ServiceCard';
 import AnimatedSection from './AnimatedSection';
 
 const ServicesSection = () => {
   const services = [
     {
-      icon: Calculator,
-      title: 'Contabilidade',
-      description: 'Serviços completos de contabilidade para empresas de todos os portes, com demonstrativos claros e precisos.'
+      icon: Scissors,
+      title: 'Banho e Tosa',
+      description: 'Banhos higiênicos e tosa com profissionais experientes, utilizando produtos de qualidade para deixar seu pet limpo e cheiroso.'
     },
     {
-      icon: BarChart3,
-      title: 'Fiscal',
-      description: 'Gerenciamento de obrigações fiscais, apuração de impostos e planejamento tributário para otimizar a carga fiscal.'
+      icon: Car,
+      title: 'Busca e Entrega',
+      description: 'Serviço de transporte para buscar e levar seu pet em sua casa, garantindo praticidade e conforto.'
     },
     {
-      icon: FileText,
-      title: 'Departamento Pessoal',
-      description: 'Gestão completa da folha de pagamento, admissões, demissões e todas as rotinas trabalhistas.'
+      icon: HomeIcon,
+      title: 'Hospedagem',
+      description: 'Ambiente seguro e confortável para seu pet se hospedar durante sua ausência, com cuidados personalizados.'
     },
     {
-      icon: Building,
-      title: 'Abertura de Empresa',
-      description: 'Auxílio completo na abertura, alteração ou encerramento de empresas, com agilidade e segurança.'
+      icon: ShoppingBag,
+      title: 'Produtos Pet',
+      description: 'Variedade de produtos para seu pet, incluindo alimentação, acessórios, brinquedos e camas de qualidade.'
     },
     {
-      icon: PieChart,
-      title: 'Consultoria Empresarial',
-      description: 'Análise financeira, planejamento estratégico e apoio na tomada de decisões para o crescimento do seu negócio.'
+      icon: Heart,
+      title: 'Cuidados Especiais',
+      description: 'Atendimento personalizado para pets com necessidades especiais, garantindo todo o cuidado necessário.'
     },
     {
-      icon: Users,
-      title: 'Societário',
-      description: 'Elaboração e alteração de contratos sociais, atas e documentos societários conforme a legislação vigente.'
+      icon: Tag,
+      title: 'Preços Acessíveis',
+      description: 'Oferecemos serviços de qualidade com preços justos e acessíveis para cuidar do seu melhor amigo.'
     }
   ];
 
   return (
-    <section id="serviços" className="py-24 bg-gradient-to-b from-blue-50 to-white">
+    <section id="serviços" className="py-24 bg-gradient-to-b from-pink-50 to-white">
       <div className="section-container">
         <AnimatedSection>
           <h2 className="section-title">Nossos Serviços</h2>
           <p className="section-subtitle">
-            Oferecemos soluções completas para atender todas as necessidades da sua empresa
+            Oferecemos soluções completas para o bem-estar e cuidado do seu pet
           </p>
         </AnimatedSection>
 
@@ -64,8 +64,8 @@ const ServicesSection = () => {
         </div>
 
         <AnimatedSection className="text-center mt-16">
-          <a href="#contato" className="btn-primary inline-block">
-            Solicite um orçamento
+          <a href="https://wa.me/5551998198415" target="_blank" rel="noopener noreferrer" className="btn-primary inline-block">
+            Agende um serviço
           </a>
         </AnimatedSection>
       </div>

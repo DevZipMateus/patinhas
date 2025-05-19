@@ -4,22 +4,22 @@ import AnimatedSection from './AnimatedSection';
 
 const PlansSection = () => {
   const plans = [{
-    title: "MEI",
-    price: "R$199",
-    description: "Ideal para Microempreendedores Individuais",
-    features: ["Declaração Anual (DASN-SIMEI)", "Emissão de guias (DAS)", "Suporte básico por e-mail", "Orientação fiscal"],
+    title: "Banho",
+    price: "A partir de R$35",
+    description: "Para pets de pequeno porte",
+    features: ["Shampoo adequado", "Secagem completa", "Perfume hipoalergênico", "Escovação", "Limpeza de ouvidos"],
     isPopular: false
   }, {
-    title: "Essencial",
-    price: "R$399",
-    description: "Perfeito para pequenas empresas",
-    features: ["Contabilidade completa", "Apuração de impostos", "Folha de pagamento (até 5 funcionários)", "Suporte por telefone e e-mail", "Relatórios trimestrais"],
+    title: "Banho & Tosa",
+    price: "A partir de R$65",
+    description: "O pacote mais procurado",
+    features: ["Banho completo", "Tosa higiênica", "Corte das unhas", "Limpeza de ouvidos", "Escovação de dentes", "Perfumação"],
     isPopular: true
   }, {
-    title: "Empresarial",
-    price: "R$799",
-    description: "Para empresas em crescimento",
-    features: ["Contabilidade completa", "Planejamento tributário", "Folha de pagamento (até 15 funcionários)", "Consultoria mensal", "Relatórios gerenciais mensais", "Atendimento prioritário"],
+    title: "Premium",
+    price: "A partir de R$85",
+    description: "Para pets exigentes",
+    features: ["Banho completo", "Tosa na máquina ou tesoura", "Hidratação", "Escovação profunda", "Busca e entrega", "Laço ou gravata"],
     isPopular: false
   }];
 
@@ -27,9 +27,9 @@ const PlansSection = () => {
     <section id="planos" className="bg-white py-16">
       <div className="section-container">
         <AnimatedSection>
-          <h2 className="section-title">Nossos Planos</h2>
+          <h2 className="section-title">Nossos Pacotes</h2>
           <p className="section-subtitle">
-            Escolha o plano que melhor se adapta às necessidades da sua empresa
+            Escolha o melhor pacote de banho e tosa para o seu pet
           </p>
         </AnimatedSection>
 
@@ -47,14 +47,14 @@ const PlansSection = () => {
           ))}
         </div>
 
-        <AnimatedSection className="mt-16 text-center bg-gray-50 rounded-xl p-8">
-          <h3 className="text-xl font-bold mb-3">Precisa de um plano personalizado?</h3>
+        <AnimatedSection className="mt-16 text-center bg-pink-50 rounded-xl p-8">
+          <h3 className="text-xl font-bold mb-3 font-codec">Precisa de um atendimento personalizado?</h3>
           <p className="text-gray-600 mb-6">
-            Oferecemos planos personalizados para empresas com necessidades específicas. 
-            Entre em contato conosco para uma proposta sob medida.
+            Oferecemos pacotes personalizados para pets com necessidades específicas. 
+            Entre em contato conosco para um orçamento sob medida.
           </p>
-          <a href="#contato" className="btn-primary inline-block">
-            Solicitar Plano Personalizado
+          <a href="https://wa.me/5551998198415" target="_blank" rel="noopener noreferrer" className="btn-primary inline-block">
+            Solicitar Orçamento
           </a>
         </AnimatedSection>
       </div>
