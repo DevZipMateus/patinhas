@@ -1,19 +1,8 @@
-
 import { CheckCircle } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
-
 const AboutSection = () => {
-  const features = [
-    'Equipe altamente qualificada',
-    'Atendimento personalizado',
-    'Produtos de qualidade',
-    'Preços competitivos',
-    'Ambiente higiênico',
-    'Horário flexível'
-  ];
-
-  return (
-    <section id="sobre-nós" className="py-24 bg-white">
+  const features = ['Equipe altamente qualificada', 'Atendimento personalizado', 'Produtos de qualidade', 'Preços competitivos', 'Ambiente higiênico', 'Horário flexível'];
+  return <section id="sobre-nós" className="py-24 bg-white">
       <div className="section-container">
         <AnimatedSection>
           <h2 className="section-title">Sobre Nós</h2>
@@ -26,11 +15,7 @@ const AboutSection = () => {
           <AnimatedSection animation="slide-in-left">
             <div className="relative">
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-xl">
-                <img 
-                  src="https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxzZWFyY2h8Mnx8cGV0JTIwc2hvcHxlbnwwfHx8fDE3MTY3ODAxNDZ8MA&ixlib=rb-4.0.3&q=80&w=1080" 
-                  alt="Patinhas Pet Shop" 
-                  className="w-full h-auto object-cover"
-                />
+                <img alt="Patinhas Pet Shop" className="w-full h-auto object-cover" src="/lovable-uploads/946ccf7c-375e-492a-8e7a-2ff557ff621d.jpg" />
               </div>
               
               <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-primary/10 rounded-full z-0"></div>
@@ -54,12 +39,10 @@ const AboutSection = () => {
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-4">
-              {features.map((feature) => (
-                <div key={feature} className="flex items-center gap-2">
+              {features.map(feature => <div key={feature} className="flex items-center gap-2">
                   <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-gray-700">{feature}</span>
-                </div>
-              ))}
+                </div>)}
             </div>
             
             <a href="https://wa.me/5551998198415" target="_blank" rel="noopener noreferrer" className="btn-primary inline-block mt-4">
@@ -68,8 +51,6 @@ const AboutSection = () => {
           </AnimatedSection>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
